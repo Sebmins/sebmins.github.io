@@ -21,7 +21,9 @@ body{
 }
 
 section{
-    padding:6rem;
+    padding-top: 6rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 a{
@@ -83,7 +85,7 @@ img{
 
 .section-heading{
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     
 }
 
@@ -219,6 +221,7 @@ li{
 .open .bar.start{
     transform:rotate(-450deg) translateX(.8rem);
 }
+
 .bar.end{
     align-self:flex-end;
     transform-origin: left;
@@ -279,51 +282,97 @@ li{
     font-weight:300;
 }
 
-.profile-img{
+
+.about-img{
     flex: 1;
     margin-right: 5rem;
+}
+
+.about-img img{
+    border: 3px solid var(--icon-border);
 }
 
 .about-details{
     flex:1;
 }
 
-.socail-media{
-    margin-top: 5rem;
+.slide_img{
+    position: absolute;
+    width:100;
+    height:100;
+    
 }
 
-.social-media i{
-    font-size: 5rem;
+#i1, #i2, #i3{
+    display:none;
+}
+
+.pre, .nxt{
+    width: 12%;
+    height 100;
+    position: absoulte;
+    top: 0;
+    background: rgba(88,88,88,.4);
+    z-index:99;
+    cursor: pointer;
+}
+
+.pre{
+    left:0;
+}
+
+.nxt{
+    right:0;
+}
+
+.nav{
+    width:100%;
+    height: 11px;
+    bottom: 12%;
+    position: absolute;
+    text-align: center;
+    z-index:99;
+}
+
+.about-details .cta{
+    justify-content:flex-end;
+    display:flex;
+    margin-top:0rem;
+    font-size:1.5rem;
+    text-transform:uppercase;
+    text-transform:underline;
+    color:var(--hyper);
     transition: color 650ms;
 }
 
-.fa-linkedin:hover{
-    color:#4267b2;
+.about-details .cta:hover{
+    color: var(--hyper-hover);
 }
-
-.fa-reddit-square:hover{
-    color:orangered;
-}
-
-.fa-steam-square:hover{
-    color:black;
-}
-
 /*end about*/
 
 
 /*start services*/
 .icon-section{
     margin:auto;
-    align-items: center;
+    align-items:stretch;
     display:flex;
     justify-content: center;
 }
 
-@media only screen and (max-width:700px) {
+.icon-second{
+    margin:auto;
+    align-items:stretch;
+    display:flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:900px) {
     .icon-section {
         display:contents;
   }
+    .icon-second{
+        display:contents;
+    }
 }
 .skill{
     display: flex;
@@ -338,6 +387,13 @@ li{
     letter-spacing: 2px;
     margin: 2rem -2px 2rem 0;
 }
+
+.skill p{
+    width:250px;
+    position:inherit;
+    text-align:center;
+}
+
 .icon-container{
     width:10rem;
     height: 10rem;
@@ -349,10 +405,66 @@ li{
 }
 
 .icon-container i{
-    color:var(--icon);
+    
     font-size:5rem;
     margin:auto;
     transform: rotate(-45deg);
+}
+
+.icon-container img{
+    color:var(--icon);
+    font-size:5rem;
+    margin:auto;
+    transform:rotate(-45deg);
+    opacity: 0.9;
+    width:55%;
+}
+
+.icon-container-second{
+    width:5rem;
+    height: 5rem;
+    border: 3px solid var(--icon-border);
+    background-color: var(--icon-background);
+    margin-bottom: 2rem;
+    display: flex;
+    transform: rotate(45deg);
+}
+
+.icon-container-second i{
+    color:var(--icon);
+    font-size:2rem;
+    margin:auto;
+    transform: rotate(-45deg);
+}
+
+.icon-container-second img{
+    color:var(--icon);
+    font-size:5rem;
+    margin:auto;
+    transform:rotate(-45deg);
+    opacity: 0.9;
+    width:55%;
+}
+
+.skill-second{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding:2rem;
+}
+
+.skill-second h1{
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    margin: 0rem -1px 0.5rem 0;
+}
+
+.skill-second p{
+    width:200px;
+    position:inherit;
+    text-align:center;
+    font-size:1rem;
 }
 
 
@@ -364,7 +476,17 @@ li{
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio-img-w img{
+    border: 3px solid var(--icon-border);
+    max-width:300px;
+}
+
+.portfolio-img-h img{
+    border: 3px solid var(--icon-border);
+    max-width:250px;
 }
 
 .portfolio-item last-child{
@@ -372,7 +494,7 @@ li{
 }
 
 .profile-img{
-    width: 50rem;
+    width:20rem;
     flex:1;
 }
 
@@ -397,19 +519,6 @@ li{
     margin-bottom: 2rem;
 }
 
-.portfolio-description .cta{
-    display: inline-block;
-    margin-top:2.5rem;
-    font-size:1.5rem;
-    text-transform:uppercase;
-    color:var(--hyper);
-    transition: color 650ms;
-}
-
-.portfolio-description .cta:hover{
-    color: var(--hyper-hover);
-}
-
 .portfolio-description .github-button{
     margin-top:2.5rem;
     border:5px;
@@ -421,8 +530,13 @@ li{
 
 
 /*start timeline*/
+.timeline {
+    margin-left:5%;
+}
+
 .timeline ul{
-    border-left: 4px solid var(--timeline-left);
+    border-left: 3px solid var(--timeline-left);
+    
     border-radius: .8rem;
     background-color: rgba(0,0,0,0,0.05);
     margin:auto;
@@ -430,6 +544,7 @@ li{
     list-style:none;
     text-align:left;
     width:70%;
+    max-width:900px;
 }
 
 .timeline h1{
@@ -488,40 +603,46 @@ li{
     background-color:var(--contact-bg);
 }
 
-.form{
-    width: 70%;
-    margin: 0 auto;
+.contact p{
+    font-size: 5rem;
 }
 
-.form label{
-    font-size: 1.5rem;
+.links{
+    margin-top: 1rem;
 }
 
-input,
-select,
-textarea{
-    width:100%;
-    padding: 1rem;
-    margin-bottom: 5px;
-    border:none;
-    outline-color:var(--dunno);
+.links i{
+    font-size: 10rem;
+    transition: color 650ms;
 }
 
-
-input[type="submit"]{
-width: inital;
-background-color: var(--submit-button);
-color:#eee;
-padding: 1rem 2rem;
-border-radius:.8rem;
-cursor: pointer;
-transition: background-color 650ms;
+.social-media{
+    padding-bottom: 4rem;
 }
 
-input[type="submit"]:hover{
-    color: #221e3f;
-    background-color: var(--submit-hover);
+.social-media li{
+    margin:0;
+    padding: 0.5rem;
+    box-sizing: border-box;
 }
+
+.social-media h2{
+    font-size: 1rem;
+    padding:0;
+    color: rgba(255, 255, 255, .3);
+    /*text-transform: uppercase;*/
+    display:block;
+    margin:0;
+}
+
+.social-media a{
+    font-size: 1rem;
+    padding:0;
+    margin:0;
+    /*text-transform: uppercase;*/
+    display:list-item;
+}
+
 /*end contact*/
 
 
@@ -552,7 +673,24 @@ input[type="submit"]:hover{
 }
 
 .copyright p{
-font-size: 1.4rem;
+    font-size: 1.4rem;
+}
+
+.social-media i{
+    font-size:5rem;
+    transition: color 650ms;
+}
+
+.fa-linkedin:hover{
+    color:#4267b2;
+}
+
+.fa-reddit-square:hover{
+    color:orangered;
+}
+
+.fa-steam-square:hover{
+    color:black;
 }
 
 /*end footer*/

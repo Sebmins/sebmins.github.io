@@ -12,42 +12,17 @@
     
 <body>
     <header>
-        <div class="menu-toggler">
-            <div class="bar half start"></div>
-            <div class="bar"></div>
-            <div class="bar half end"></div>
-        </div>
-        <nav class="top-nav">
-            <ul class="nav-list">
-                <li>
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li>
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li>
-                    <a href="#services" class="nav-link">Services</a>
-                </li>
-                <li>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
         <div class="landing-text">
             <h1>Seb Waring</h1>
             <h6>Software Developer / Games Developer</h6>
         </div>
     </header>
- 
-    
 
     <section class="about" id="about">
+        <div class="section-heading">
+            <h1>About Myself</h1>
+            <a target="_blank" href="https://github.com/Sebmins/sebmins.github.io/blob/master/CV%20-%20Seb%20Waring.pdf" class="cta">Click to view my CV</a>
+        </div>
         <div class="container">
             <div class="about-img">
                 <div class="w3-content w3-display-container" style="max-width:500px">
@@ -56,12 +31,7 @@
             </div>
             
             <div class="about-details">
-                <div class="about-heading">
-                    <h1>About</h1>
-                    <h6>Myself</h6>
-                </div>
                 <p>I graduated Brunel University achieving a First Class Honours in Computer Science BSc (Hons) with Professional Practice. I developed this website to be able to display all my work inside and outside of University.</p>
-                <a target="_blank" href="https://github.com/Sebmins/sebmins.github.io/blob/master/CV%20-%20Seb%20Waring.pdf" class="cta">View my CV</a>
             </div>
         </div>
     </section>
@@ -83,13 +53,16 @@
                     <a class="github-button" href="https://github.com/Sebmins/MazeGenerator" data-size="large" aria-label="Watch Sebmins/MazeGenerator on GitHub">View Repository</a>
                 </div>
                 <div class="portfolio-img-w">
-                    <img src="Pictures/bfs71.gif" alt="">
+                    <img src="Pictures/bfsL.gif" alt="">
                 </div>
             </div>
             
             <div class="portfolio-item">
-                <div class="portfolio-img-h has-margin-right">
-                    <img src="Pictures/GamePlaceholder.jpg" alt="">
+                <div class="portfolio-video has-margin-right">
+                    <video width="310" height="160" controls loop autoplay autobuffer muted>
+                      <source src="Pictures/GameVid.mp4" type="video/mp4">
+                      <!---<source src="movie.ogg" type="video/ogg"> loop autoplay autobuffer controls muted -->
+                    </video>
                 </div> 
                 <div class="portfolio-description">
                     <h6>Game Development</h6>
@@ -102,28 +75,33 @@
             
             <div class="portfolio-item">
                 <div class="portfolio-description has-margin-right">
-                    <h6>Web Development</h6>
-                    <h1>Portfolio Website</h1>
-                    <p>A 1-month task to create a website that displays all my projects inside and outside of University. With previously very little html and css experience.</p>
-                    <a class="github-button" href="https://github.com/Sebmins/PortfolioWebsite" data-size="large" aria-label="Watch Sebmins/PortfolioWebsite on GitHub">View Repository</a>
-                </div>
-                <div class="portfolio-img-w">
-                    <img src="Pictures/WebsiteScreenshot.png" alt="">
-                </div>
-            </div>
-            
-            <div class="portfolio-item">
-                <div class="portfolio-img-h has-margin-right">
-                    <img src="Pictures/ComingSoon.png" alt="">
-                </div>
-                <div class="portfolio-description">
                     <h6>Game Design</h6>
                     <h1>Maze Runner Unity Game</h1>
                     <p>I wanted to combine my knowledge of maze algoirthms and C# to create a Unity game. This is currently being worked on and I will update GitHub with any progress.</p>
                     <a class="github-button" href="https://github.com/Sebmins/" data-size="large" aria-label="Coming Soon...">View Progress</a>
                 </div>
+                <div class="portfolio-video">
+                    <video width="308" height="210" controls loop autoplay autobuffer muted>
+                      <source src="Pictures/MazeUnity.mp4" type="video/mp4">
+                    </video>
+                </div>
                 
             </div>
+            
+            <div class="portfolio-item">
+                <div class="portfolio-img-w  has-margin-right">
+                    <img src="Pictures/WebsiteScreenshot.png" alt="">
+                </div>
+                <div class="portfolio-description">
+                    <h6>Web Development</h6>
+                    <h1>Portfolio Website</h1>
+                    <p>A 1-month task to create a website that displays all my projects inside and outside of University. With previously very little html and css experience.</p>
+                    <a class="github-button" href="https://github.com/Sebmins/PortfolioWebsite" data-size="large" aria-label="Watch Sebmins/PortfolioWebsite on GitHub">View Repository</a>
+                </div>
+                
+            </div>
+            
+            
         </div>
     </section>
     
@@ -131,7 +109,7 @@
         <div class="container">
             <div class="section-heading">
                 <h1>Skills</h1>
-                <h6>What do I know</h6>
+                <h6>What I know</h6>
             </div>
             <div class="icons">
                 <div class="icon-section">
@@ -198,7 +176,7 @@
                                 <i class="fab fa-html5"></i>
                             </div>
                             <h1>HTML, CSS, JavaScript</h1>
-                            <p>Basic knowledge learnt for creating this website</p>
+                            <p>Basic knowledge in HTML, CSS and JavaScript</p>
                         </div>
                     </div>
                 </div>
@@ -210,7 +188,7 @@
         <div class="container">
             <div class="section-heading">
                 <h1>Timeline</h1>
-                <h6>Placement year</h6>
+                <h6>Key modules and placement year</h6>
             </div>
         </div>
         <div class="timeline">
@@ -242,8 +220,8 @@
             <ul class="nav-list">
                 
                 <li>
-                    <a href="#" class="icon-link">
-                        <i class="fas fa-envelope"></i>
+                    <a target="_blank" href="mailto:sebmins@outlook.com" class="icon-link">
+                        <i class="fas fa-envelope-square"></i>
                     </a>
                 </li>
                 <li>
@@ -253,7 +231,7 @@
                     
                 
                 <li>
-                    <a href="#" class="icon-link">
+                    <a target="_blank" href="https://www.linkedin.com/in/sebastianwaring/" class="icon-link">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
@@ -263,7 +241,7 @@
                 </li>
                 
                 <li>
-                    <a target="_blank" href="#" class="icon-link">
+                    <a target="_blank" href="https://www.GitHub.com/Sebmins" class="icon-link">
                         <i class="fab fa-github-square"></i>
                     </a>
                 </li>   
@@ -279,6 +257,38 @@
     <footer class="copyright">
         <p>&copy; 2019 Sebastian Waring</p>
     </footer>
+
+    <script>
+        var index = Math.round(Math.random() * 3);
+
+        var ColourBg = "06366D"; // default color - white (index = 0)
+        var ColourOutline = "46D3AC"; // default color - white (index = 0)
+        var ColourFill = "EDB566"; // default color - white (index = 0)
+        
+        if(index == 1){
+            ColourBg = "674d3c"; 
+            ColourOutline = "ff6f69";
+            ColourFill = "ffcc5c";
+        }
+        if(index == 2){
+            ColourBg = "3F1D55";
+            ColourOutline = "46D3AC";
+            ColourFill = "FDBFFE";
+        }
+        if(index == 3){
+            ColourBg = "2F4F4F";
+            ColourOutline = "0496FF";
+            ColourFill = "eee";
+        }
+        
+        document.documentElement.style
+        .setProperty('--bg', "#" + ColourBg);
+        document.documentElement.style
+        .setProperty('--outline', "#" + ColourOutline);
+        document.documentElement.style
+        .setProperty('--fill', "#" + ColourFill);
+
+    </script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

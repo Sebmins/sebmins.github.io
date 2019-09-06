@@ -281,18 +281,22 @@ li{
     align-items: center;
     justify-content:center;
 }
+.cv-section {
+    font-size:1.5rem;
+    display:inline;
+}
 
 .section-heading a{
-    font-size: 1.6rem;
-    font-weight:300;
+    /*font-size: 1.6rem;
+    font-weight:300;*/
 }
 
 .section-heading .cta{
-    justify-content:center;
-    display:flex;
-    margin-top:0rem;
+    /*justify-content:center;*/
+    /*display:inline;*/
+    /*margin-top:0rem;
     margin-left:40%;
-    margin-right:40%;
+    margin-right:40%;*/
     font-size:1.5rem;
     /*text-transform:uppercase;*/
     text-transform:underline;

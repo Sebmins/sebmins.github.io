@@ -8,13 +8,13 @@
 
 html{
     font-size: 10px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Arial','sans-serif';
     color:#eee
 }
 
 .landing-text h1{
     font-size: 20rem;
-    font-family: 'Lato', sans-serif;
+    font-family:'Arial','sans-serif';
     background: var(--ver-gradient);
     -webkit-background-clip:text;
     color:transparent;
@@ -116,7 +116,7 @@ img{
 
 .section-heading h1{
     font-size: 3.5rem;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, .3);
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
@@ -190,9 +190,9 @@ li{
 }
 
 .nav-link{
-    font-family:'Montserrat', sans-serif;
+    font-family: 'The Historia Demo', sans-serif;
     font-size: 5vw; 
-    padding:20rem;
+    padding:1rem;
 }
 
 .landing-text{
@@ -256,7 +256,6 @@ li{
     font-size: 10rem;
     opacity: .3;
 }
-
 .about-heading h6{
     font-size: 2rem;
     font-weight:300;
@@ -629,11 +628,9 @@ li{
 .fa-linkedin:hover{
     color:#4267b2;
 }
-
 .fa-reddit-square:hover{
     color:orangered;
 }
-
 .fa-steam-square:hover{
     color:black;
 }
@@ -653,4 +650,3 @@ li{
     }
 }
 /*end animation*/
-

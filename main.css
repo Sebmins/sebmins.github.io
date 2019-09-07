@@ -33,6 +33,7 @@ section{
     padding-top: 6rem;
     padding-left: 6rem;
     padding-right: 6rem;
+    /*padding-bottom: 6rem;*/
 }
 
 a{
@@ -46,7 +47,6 @@ p{
 }
 
 img{
-    width:100%;
 }
 
 :root {
@@ -478,12 +478,14 @@ li{
 
 .portfolio-img-w img{
     border: 3px solid var(--icon-border);
-    max-width:300px;
+    width:100%;
+    max-width:600px;*/
 }
 
 .portfolio-img-h img{
     border: 3px solid var(--icon-border);
-    max-width:250px;
+    /*width:100%;*/
+    /*max-width:300px;*/
 }
 
 .portfolio-item last-child{
@@ -600,6 +602,10 @@ li{
     background-color:var(--contact-bg);
 }
 
+.contact{
+    margin-bottom: rem;
+}
+
 .contact p{
     font-size: 5rem;
 }
@@ -644,6 +650,9 @@ li{
 
 
 /*start footer*/
+
+
+
 .copyright{
     width:100%;
     text-align:center;

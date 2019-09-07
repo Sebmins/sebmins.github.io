@@ -8,13 +8,13 @@
 
 html{
     font-size: 10px;
-    font-family: 'Arial','sans-serif';
+    font-family: 'Muli', sans-serif;
     color:#eee
 }
 
 .landing-text h1{
     font-size: 20rem;
-    font-family:'Manjari', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
     background: var(--ver-gradient);
     -webkit-background-clip:text;
     color:transparent;

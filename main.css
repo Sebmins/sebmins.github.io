@@ -14,7 +14,7 @@ html{
 
 .landing-text h1{
     font-size: 20rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     background: var(--ver-gradient);
     -webkit-background-clip:text;
     color:transparent;
@@ -190,9 +190,9 @@ li{
 }
 
 .nav-link{
-    font-family: 'The Historia Demo', sans-serif;
+    font-family:'Montserrat', sans-serif;
     font-size: 5vw; 
-    padding:1rem;
+    padding:20rem;
 }
 
 .landing-text{

@@ -14,7 +14,7 @@ html{
 
 .landing-text h1{
     font-size: 20rem;
-    font-family:'Arial','sans-serif';
+    font-family:'Manjari', sans-serif;;
     background: var(--ver-gradient);
     -webkit-background-clip:text;
     color:transparent;

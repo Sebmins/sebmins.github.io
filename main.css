@@ -415,13 +415,13 @@ li{
 .portfolio-img-w img{
     border: 3px solid var(--icon-border);
     width:100%;
-    max-width:600px;*/
+    max-width:400px;*/
 }
 
 .portfolio-img-h img{
     border: 3px solid var(--icon-border);
     /*width:100%;*/
-    /*max-width:300px;*/
+    max-width:350px;
 }
 
 .portfolio-item last-child{

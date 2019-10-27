@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>2D Buca - Seb Waring</title>
-    <link rel="stylesheet" href="main.css">
+    
     <style>
         *{
             font-family: "Germania One";
         }
         #gameover{
-            position:absolute;
-            margin:auto;
-            width : 50%;
+            position: absolute
             width : 315px;
             height: 560px;
             background: rgba(0,0,0,0.5);
-            display:none;
+            display: none;
         }
         #youwon{
-            align-items: center;
             width: 200px;
             position: absolute;
             top : 400px;
@@ -26,7 +23,6 @@
             display: none;
         }
         #youlose{
-            align-items: center;
             width:315px;
             position: absolute;
             top: 560px;
@@ -34,25 +30,22 @@
             display: none;
         }
         #restart{
-            align-items: center;
             position: absolute;
             left: 115px;
             top: 315px;
             cursor: pointer;
-            font-size: 3em;
+            font-size: 1.25em;
             color : #FFF;
         }
         #win{
-            align-items: center;
             position: absolute;
-            left: 5005px;
+            left: 115px;
             top: 315px;
             cursor: pointer;
             font-size: 1.25em;
             color : #FFF;
         }
         #google{
-            align-content: center;
             width: 100px;
             position: absolute;
             top : 200px;
@@ -61,50 +54,21 @@
         }
     </style>
 </head>
-<body>    
-    <div>
-        <h1> BUCA GAME</h1>
-    </div>
-    <div id="gameover">
-        <img src="img/GooglePlay.png" alt="" id="youwon" >
-        <div id="restart">You Won!</div>
-    </div>
+<body>  
+    <canvas id="Buca" width="315" height="510"></canvas>
     
-    <div>
-        <canvas id="Buca" width="315" height="560"></canvas>
-    </div>
-    
+    <script src="debug.js"></script>
     <script src="components.js"></script>
+    <script src="hole.js"></script>
+    <script src="puck.js"></script>
+    <script src="mouse.js"></script>
+    <script src="level1.js"></script>
+    <script src="level2.js"></script>
+    <script src="level3.js"></script>
+    <script src="level4.js"></script>
+    <script src="level5.js"></script>
+    <script src="level6.js"></script>
+    <script src="collision.js"></script>
     <script src="game.js"></script>
-    <script>
-        var index = Math.round(Math.random() * 3);
-        var ColourBg = "06366D"; // default color - white (index = 0)
-        var ColourOutline = "46D3AC"; // default color - white (index = 0)
-        var ColourFill = "EDB566"; // default color - white (index = 0)
-        
-        if(index == 1){
-            ColourBg = "674d3c"; 
-            ColourOutline = "ff6f69";
-            ColourFill = "ffcc5c";
-        }
-        if(index == 2){
-            ColourBg = "3F1D55";
-            ColourOutline = "46D3AC";
-            ColourFill = "FDBFFE";
-        }
-        if(index == 3){
-            ColourBg = "2F4F4F";
-            ColourOutline = "0496FF";
-            ColourFill = "eee";
-        }
-        
-        document.documentElement.style
-        .setProperty('--bg', "#" + ColourBg);
-        document.documentElement.style
-        .setProperty('--outline', "#" + ColourOutline);
-        document.documentElement.style
-        .setProperty('--fill', "#" + ColourFill);
-    </script>
-    
 </body>
 </html>

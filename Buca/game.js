@@ -173,15 +173,3 @@ function loop(){
     }
 }
 loop();
-
-const restart = document.getElementById("restart");
-
-// Click you won to play again
-restart.addEventListener("click", function(){
-    location.reload(); // reload the page
-})
-
-// Show winning message
-function showYouWin(){
-    restart.style.display = "block";
-}

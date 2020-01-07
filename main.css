@@ -424,6 +424,12 @@ li{
     max-width:350px;
 }
 
+.portfolio-img-app img{
+    border: 3px solid var(--icon-border);
+    /*width:100%;*/
+    max-width:200px;
+}
+
 .portfolio-item last-child{
     margin-bottom: 0;
 }

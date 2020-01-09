@@ -19,7 +19,7 @@
             <h6>Game Developer / Software Developer</h6>
         </div>
     </header>
-
+    
     <section class="about" id="about">
         <div class="section-heading">
             <h1>About Myself</h1>
@@ -53,9 +53,7 @@
                     <h6>JavaScript Development</h6>
                     <h1>Playable Advert</h1>
                     <p>I developed a playable advert in HTML5 and JavaScript for NeonPlay, based off their hyper casual game Buca. The advert is meant for mobile however it is available to play on my website.</p>
-                    <a target="_blank" class="github-button" href="https://github.com/Sebmins/PlayableAd" data-size="large" aria-label="Watch Sebmins/MazeGenerator on GitHub">View Repository</a>
-                    <a target="_blank" class="github-button" href="Buca/Buca.html" data-icon="octicon-eye" data-size="large">Play Demo</a>
-                    <a target="_blank" class="github-button" href="https://sebmins.github.io/Buca/Buca.html" data-icon="octicon-eye" data-size="large">Buca Game</a>
+                    <button target="_blank" class='button-g google-blue' onclick="window.location.href = 'Buca/Buca.html';">Play The Demo</button>
                 </div>
                 <div class="portfolio-img-app">
                     <img src="Pictures/BucaLogojpg.jpg" alt="">
@@ -70,14 +68,11 @@
                     <h6>Unity Development</h6>
                     <h1>Tile Runner</h1>
                     <p>I developed an infinite runner in Unity with C#. Having experience developing mazes in Java I wanted to implement a game based off random generation given adjustable constraints.</p>
-                    <a target="_blank" class="github-button" href="https://github.com/Sebmins/SpaceBoy-Shootem" data-size="large" aria-label="Watch Sebmins/SpaceBoy-Shootem on GitHub">View Repository</a>
-                    <a target="_blank" class="github-button" href="https://github.com/Sebmins/TileRun/TileRun.html" data-icon="octicon-eye" data-size="large">Play Demo</a>
+                    <button target="_blank" class='button-g google-blue' onclick="window.location.href = 'TileRun/TileRun.html';">Play The Demo</button>
                 </div>
             </div>
         </div>
     </section>
-    
-    
                     
     <section class="portfolio" id="portfolio">
         <div class="container">
@@ -307,6 +302,7 @@
 
     <script>
         var index = Math.round(Math.random() * 3);
+        localStorage.setItem("randomInt",index);
         var ColourBg = "06366D"; // default color - white (index = 0)
         var ColourOutline = "46D3AC"; // default color - white (index = 0)
         var ColourFill = "EDB566"; // default color - white (index = 0)
@@ -338,6 +334,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-    
     </body>
 </html>

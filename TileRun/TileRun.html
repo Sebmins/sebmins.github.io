@@ -1,162 +1,81 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <link rel="stylesheet" href="../main.css">    
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | TileRun</title>
+  </head>
+    <style> 
+        #Buca{
+            position: absolute;
+            margin :auto;
+            top:20rem;
+            right:0;
+            left:0;
+            bottom:0;
+        }
+        .middle{
+            width:100%;
+            text-align:center;
+            padding:0rem 0rem 4rem 0rem;
+            position: relative;
+        }
+    </style>
+<body>
+    
+    <section class="about" id="about">
+        <div class="section-heading" style="margin-bottom:70rem;">
+            <h1>About Myself</h1>
+        </div>
+        <div>
+                <iframe class="has-border" id="Buca" src="https://i.simmer.io/@Sebmins/tilerunner" style="width:327px;height:666px" ></iframe>
+        </div>
+    </section>
+    
+    <div class="middle"> 
+        <a class="second github-button" target="_blank" href="Buca/Buca.html" data-icon="download" data-size="large">View Repository</a>
+        <a class="github-button" href="https://github.com/ntkme/github-buttons/archive/master.zip" data-icon="octicon-cloud-download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download APK for Android</a>
+    </div>
+    
+    <footer class="copyright">
+        <p>&copy; 2019 Sebastian Waring</p>
+    </footer>
+    
+    
+    <script>
+        window.onload = alert("Hi MUM"));
+        var index = localStorage.getItem("randomInt");
+        var ColourBg = "06366D"; // default color - white (index = 0)
+        var ColourOutline = "46D3AC"; // default color - white (index = 0)
+        var ColourFill = "EDB566"; // default color - white (index = 0)
+        
+        if(index == 1){
+            ColourBg = "674d3c"; 
+            ColourOutline = "ff6f69";
+            ColourFill = "ffcc5c";
+        }
+        if(index == 2){
+            ColourBg = "3F1D55";
+            ColourOutline = "46D3AC";
+            ColourFill = "FDBFFE";
+        }
+        if(index == 3){
+            ColourBg = "2F4F4F";
+            ColourOutline = "0496FF";
+            ColourFill = "eee";
+        }
+        
+        document.documentElement.style
+        .setProperty('--bg', "#" + ColourBg);
+        document.documentElement.style
+        .setProperty('--outline', "#" + ColourOutline);
+        document.documentElement.style
+        .setProperty('--fill', "#" + ColourFill);
+    </script>
     <script src="Build/UnityLoader.js"></script>
     <script>
       UnityLoader.instantiate("unityContainer", "Build/WEBGL.json");
     </script>
-  </head>
-  <body>
-    <div id="unityContainer" style="width: 360px; height: 740px; margin: auto"></div>
-  </body>
-    <style>
-
-    body
-
-    {
-
-       margin: 0;
-
-       border: 0;
-
-       padding: 0;
-
-       background-color: purple; // It depends of your project.
-
-    }
-
-    canvas
-
-    {
-
-       width: 30%;
-
-       height: 30%;
-
-       position: absolute;
-
-    }
-
-    </style>
-    <script> 
-
-function main() {
-  // Get A WebGL context
-  /** @type {HTMLCanvasElement} */
-  var canvas = document.getElementById("unityContainer");
-  var gl = canvas.getContext("webgl");
-  if (!gl) {
-    return;
-  }
-
-  // setup GLSL program
-  var program = webglUtils.createProgramFromScripts(gl, ["2d-vertex-shader", "2d-fragment-shader"]);
-  gl.useProgram(program);
-
-  // look up where the vertex data needs to go.
-  var positionAttributeLocation = gl.getAttribLocation(program, "a_position");
-
-  // lookup uniforms
-  var colorLocation = gl.getUniformLocation(program, "u_color");
-  var matrixLocation = gl.getUniformLocation(program, "u_matrix");
-
-  // Create a buffer to put three 2d clip space points in
-  var positionBuffer = gl.createBuffer();
-
-  // Bind it to ARRAY_BUFFER (think of it as ARRAY_BUFFER = positionBuffer)
-  gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
-
-  requestAnimationFrame(drawScene);
-
-  // Draw the scene.
-  function drawScene(now) {
-    now *= 0.001; // convert to seconds
-
-    resize(gl.canvas);
-
-    gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
-
-    // Clear the canvas.
-    gl.clear(gl.COLOR_BUFFER_BIT);
-
-    // Tell it to use our program (pair of shaders)
-    gl.useProgram(program);
-
-    // Turn on the attribute
-    gl.enableVertexAttribArray(positionAttributeLocation);
-
-    // Bind the position buffer.
-    gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
-
-    // Tell the attribute how to get data out of positionBuffer (ARRAY_BUFFER)
-    var size = 2;          // 2 components per iteration
-    var type = gl.FLOAT;   // the data is 32bit floats
-    var normalize = false; // don't normalize the data
-    var stride = 0;        // 0 = move forward size * sizeof(type) each iteration to get the next position
-    var offset = 0;        // start at the beginning of the buffer
-    gl.vertexAttribPointer(
-        positionAttributeLocation, size, type, normalize, stride, offset);
-
-    // Set Geometry.
-    var radius = Math.sqrt(gl.canvas.width * gl.canvas.width + gl.canvas.height * gl.canvas.height) * 0.5;
-    var angle = now;
-    var x = Math.cos(angle) * radius;
-    var y = Math.sin(angle) * radius;
-    var centerX = gl.canvas.width  / 2;
-    var centerY = gl.canvas.height / 2;
-    setGeometry(gl, centerX + x, centerY + y, centerX - x, centerY - y);
-
-    // Compute the matrices
-    var projectionMatrix = m3.projection(gl.canvas.width, gl.canvas.height);
-
-    // Set the matrix.
-    gl.uniformMatrix3fv(matrixLocation, false, projectionMatrix);
-
-    // Draw in red
-    gl.uniform4fv(colorLocation, [1, 0, 0, 1]);
-
-    // Draw the geometry.
-    var primitiveType = gl.LINES;
-    var offset = 0;
-    var count = 2;
-    gl.drawArrays(primitiveType, offset, count);
-
-    requestAnimationFrame(drawScene);
-  }
-
-  function resize(canvas) {
-    var realToCSSPixels = window.devicePixelRatio;
-
-    // Lookup the size the browser is displaying the canvas in CSS pixels
-    // and compute a size needed to make our drawingbuffer match it in
-    // device pixels.
-    var displayWidth  = Math.floor(canvas.clientWidth  * realToCSSPixels);
-    var displayHeight = Math.floor(canvas.clientHeight * realToCSSPixels);
-
-    // Check if the canvas is not the same size.
-    if (canvas.width  !== displayWidth ||
-        canvas.height !== displayHeight) {
-
-      // Make the canvas the same size
-      canvas.width  = displayWidth;
-      canvas.height = displayHeight;
-    }
-  }
-}
-
-// Fill the buffer with a line
-function setGeometry(gl, x1, y1, x2, y2) {
-  gl.bufferData(
-      gl.ARRAY_BUFFER,
-      new Float32Array([
-          x1, y1,
-          x2, y2]),
-      gl.STATIC_DRAW);
-}
-
-main();
-    </script>
+    </body>
 </html>

@@ -3,22 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>2D Buca - Seb Waring</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../main.css">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <style> 
         #Buca{
-            border: 2px solid #FFF;
             position: absolute;
-            margin :auto;
-            top:0;
+            margin:auto;
+            margin-top:1rem;
             right:0;
             left:0;
-            bottom:0;
+        }
+        .middle{
+            width:100%;
+            text-align:center;
+            padding:4rem 19rem 4rem 0rem;
+            position: relative;
+        }
+        .noselect{
+            -moz-user-select:none;
+            -webkit-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+            -o-user-select:none;>
         }
     </style>
 </head>
 <body>
+    <section class="about noselect" unselectable="on"; unselectable="on" onselectstart="return false;" onmousedown="return false;" id="about" style="margin-bottom:50rem">
+        <div class="section-heading">
+            <h1>Playable Ad</h1>
+                <canvas class="has-border" id="Buca" width="315" height="510"></canvas>
+        </div>
+    </section>
+    <div class="middle noselect" unselectable="on"; unselectable="on" onselectstart="return false;" onmousedown="return false;"> 
+        <a class="second github-button" target="_blank" href="https://github.com/Sebmins/PlayableAd" data-size="large">View Repository</a>
+        <!--<a class="github-button" href="https://github.com/ntkme/github-buttons/archive/master.zip" data-icon="octicon-cloud-download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download APK for Android</a>-->
+    </div>
+    
+    <footer class="copyright noselect" unselectable="on"; unselectable="on" onselectstart="return false;" onmousedown="return false;">
+        <p>&copy; 2019 Sebastian Waring</p>
+    </footer>
+    
     <script>
-        var index = Math.round(Math.random() * 3);
+        var index = localStorage.getItem("randomInt");
         var ColourBg = "06366D"; // default color - white (index = 0)
         var ColourOutline = "46D3AC"; // default color - white (index = 0)
         var ColourFill = "EDB566"; // default color - white (index = 0)
@@ -46,9 +73,6 @@
         document.documentElement.style
         .setProperty('--fill', "#" + ColourFill);
     </script>
-    
-    <canvas id="Buca" width="315" height="510"></canvas>
-    
     <script src="debug.js"></script>
     <script src="components.js"></script>
     <script src="hole.js"></script>

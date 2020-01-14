@@ -605,8 +605,8 @@ li{
     background-color:rgba(0, 0, 0, 0.5);
     padding:2rem 0;
     position: relative;
+    bottom:0;
 }
-
 
 .up{
     position: absolute;

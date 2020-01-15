@@ -10,7 +10,7 @@
         #Buca{
             position: absolute;
             margin :auto;
-            top:22rem;
+            top:0rem;
             right:0;
             left:0;
             bottom:0;
@@ -18,12 +18,24 @@
         .middle{
             width:100%;
             text-align:center;
-            padding:0rem 0rem 4rem 0rem;
+            padding:0rem 0rem 0rem 0rem;
             position: relative;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        #page-container {
+            position: relative;
+            min-height: 20vh;
+        }
+
+        #content-wrap {
+            padding-bottom: 2.5rem;    /* Footer height */
         }
     </style>
 <body>
-    
     <section class="about" id="about">
         <div class="section-heading" style="margin-bottom:70rem;">
             <h1>Tile Runner</h1>
@@ -39,9 +51,13 @@
         <a class="github-button" href="https://github.com/ntkme/github-buttons/archive/master.zip" data-icon="octicon-cloud-download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download APK for Android</a>
     </div>
     
-    <footer class="copyright">
-        <p>&copy; 2019 Sebastian Waring</p>
-    </footer>
+    <div id="page-container">
+        <div id="content-wrap"> 
+            <footer class="copyright footer">
+                <p>&copy; 2019 Sebastian Waring</p>
+            </footer>
+        </div>
+    </div>
     
     
     <script>

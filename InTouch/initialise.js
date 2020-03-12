@@ -27,7 +27,8 @@ heading.src = "graphics/heading.png";
 
 function headingText(string){
     ctx.drawImage(heading, 40,25,800,99);
-    ctx.font = `80px "${Dimbo}"`;
+    //ctx.font = `80px "${Dimbo}"`;
+    ctx.font = "40px Roboto";
     ctx.fillStyle = "black";
     ctx.textAlign = "center";
     ctx.fillText(string,450,100);

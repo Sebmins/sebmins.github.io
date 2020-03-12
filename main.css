@@ -706,8 +706,8 @@ border: 1px solid #3079ED;
   font-family: 'Dimbo';
   font-style: normal;
   font-weight: 400;
-  src: local('Amatica SC'),
-       local('AmaticaSC-Regular'),
+  src: local('Dimbo SC'),
+       local('Dimbo-Regular'),
        url(InTouch/fonts/Dimbo.ttf) format('truetype');
 }
 /*end animation*/

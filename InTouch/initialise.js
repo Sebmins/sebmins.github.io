@@ -5,7 +5,7 @@ const ctx = cvs.getContext("2d");
 cvs.style.border = "10px solid #000";
 ctx.lineWidth = 1;
 
-const FONT_NAME = 'Dimbo';
+const Dimbo = 'Dimbo';
 //document.fonts.load('10pt "Dimbo"').then(renderText);
 
 const support_safe = new Image();
@@ -27,7 +27,7 @@ heading.src = "graphics/heading.png";
 
 function headingText(string){
     ctx.drawImage(heading, 40,25,800,99);
-    ctx.font = `80px "${FONT_NAME}"`;
+    ctx.font = `80px "${Dimbo}"`;
     ctx.fillStyle = "black";
     ctx.textAlign = "center";
     ctx.fillText(string,450,100);

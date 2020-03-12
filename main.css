@@ -708,6 +708,6 @@ border: 1px solid #3079ED;
   font-weight: 400;
   src: local('Amatica SC'),
        local('AmaticaSC-Regular'),
-       url(fonts/Dimbo.ttf) format('truetype');
+       url(InTouch/fonts/Dimbo.ttf) format('truetype');
 }
 /*end animation*/

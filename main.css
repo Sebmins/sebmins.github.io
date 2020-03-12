@@ -702,4 +702,12 @@ border: 1px solid #3079ED;
         box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
     }
 }
+@font-face {
+  font-family: 'Dimbo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amatica SC'),
+       local('AmaticaSC-Regular'),
+       url(fonts/Dimbo.ttf) format('truetype');
+}
 /*end animation*/

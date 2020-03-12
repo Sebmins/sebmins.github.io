@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Dimbo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amatica SC'),
+       local('AmaticaSC-Regular'),
+       url(fonts/Dimbo.ttf) format('truetype');
+}

@@ -266,8 +266,8 @@ li{
 }*/
 
 .about-img{
-    flex: 1;
-    margin-right: 5rem;
+    flex: ;
+    margin-right: 4rem;
 }
 
 .about-img img{
@@ -276,6 +276,7 @@ li{
 
 .about-details{
     flex:1;
+    text-align: justify;
 }
 /*end about*/
 
@@ -445,6 +446,7 @@ li{
 
 .portfolio-description{
     margin-bottom: 0;
+    text-align: justify;
 }
 
 .portfolio-description h1{

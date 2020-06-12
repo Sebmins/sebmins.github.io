@@ -9,11 +9,10 @@
     <style> 
         #Buca{
             position: absolute;
-            margin :auto;
-            top:0rem;
+            margin:auto;
+            margin-top:1rem;
             right:0;
             left:0;
-            bottom:0;
         }
         .middle{
             width:100%;
@@ -30,7 +29,6 @@
             position: relative;
             min-height: 20vh;
         }
-
         #content-wrap {
             padding-bottom: 2.5rem;    /* Footer height */
         }
@@ -40,20 +38,19 @@
         <div class="section-heading" style="margin-bottom:70rem;">
             <h1>Tile Runner</h1>
             <h6>Use the arrow keys to run around</h6>
+                <iframe class="has-border" id="Buca" src="https://i.simmer.io/@Sebmins/tilerunner" style="width:327px;height:666px" ></iframe>
         </div>
         <div>
-                <iframe class="has-border" id="Buca" src="https://i.simmer.io/@Sebmins/tilerunner" style="width:327px;height:666px" ></iframe>
         </div>
     </section>
     
     <div class="middle"> 
-        <a class="second github-button" target="_blank" href="Buca/Buca.html" data-icon="download" data-size="large">View Repository</a>
-        <a class="github-button" href="https://github.com/ntkme/github-buttons/archive/master.zip" data-icon="octicon-cloud-download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download APK for Android</a>
+        <a class="second github-button" href="https://github.com/Sebmins/MazeRunner" target="_blank" href="Buca/Buca.html" data-icon="octicon-cloud-download" data-size="large">View Repository</a>
+        <a class="github-button" href="https://github.com/Sebmins/MazeRunner/raw/master/TileRun/APKs/AndroidAPK/TileRun.aab" data-icon="download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download APK for Android</a>
     </div>
-    
     <div id="page-container">
         <div id="content-wrap"> 
-            <footer class="copyright footer">
+            <footer class="copyright footer" style="position:absolute">
                 <p>&copy; 2019 Sebastian Waring</p>
             </footer>
         </div>
@@ -61,7 +58,6 @@
     
     
     <script>
-        window.onload = alert("Hi MUM"));
         var index = localStorage.getItem("randomInt");
         var ColourBg = "06366D"; // default color - white (index = 0)
         var ColourOutline = "46D3AC"; // default color - white (index = 0)

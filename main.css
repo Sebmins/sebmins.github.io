@@ -266,8 +266,8 @@ li{
 }*/
 
 .about-img{
-    flex: 1;
-    margin-right: 5rem;
+    flex: ;
+    margin-right: 4rem;
 }
 
 .about-img img{
@@ -276,6 +276,7 @@ li{
 
 .about-details{
     flex:1;
+    text-align: justify;
 }
 /*end about*/
 
@@ -445,6 +446,7 @@ li{
 
 .portfolio-description{
     margin-bottom: 0;
+    text-align: justify;
 }
 
 .portfolio-description h1{
@@ -701,5 +703,13 @@ border: 1px solid #3079ED;
     100%{
         box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
     }
+}
+@font-face {
+  font-family: 'Dimbo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dimbo SC'),
+       local('Dimbo-Regular'),
+       url(InTouch/fonts/Dimbo.ttf) format('truetype');
 }
 /*end animation*/

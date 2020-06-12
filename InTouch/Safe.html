@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>InTouch Safe Game</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="../main.css">
+        <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <section class="about noselect" unselectable="on"; unselectable="on" onselectstart="return false;" onmousedown="return false;" id="about" >
+            <div class="section-heading">
+                <h1>InTouch Safe Game</h1>
+                <canvas class="has-border" id="Buca" width="920" height="630"></canvas>
+            </div>
+        </section>
+    </body> 
+    
+    <div id="page-container">
+        <div id="content-wrap"> 
+            <footer class="copyright footer" unselectable="on"; unselectable="on" onselectstart="return false;" onmousedown="return false;">
+                <p>&copy; 2019 Sebastian Waring</p>
+            </footer>
+        </div>
+    </div>
+    
+    <script>
+    var index = localStorage.getItem("randomInt");
+    var ColourBg = "06366D"; // default color - white (index = 0)
+    var ColourOutline = "46D3AC"; // default color - white (index = 0)
+    var ColourFill = "EDB566"; // default color - white (index = 0)
+
+    if(index == 1){
+        ColourBg = "674d3c"; 
+        ColourOutline = "ff6f69";
+        ColourFill = "ffcc5c";
+    }
+    if(index == 2){
+        ColourBg = "3F1D55";
+        ColourOutline = "46D3AC";
+        ColourFill = "FDBFFE";
+    }
+    if(index == 3){
+        ColourBg = "2F4F4F";
+        ColourOutline = "0496FF";
+        ColourFill = "eee";
+    }
+
+    document.documentElement.style
+    .setProperty('--bg', "#" + ColourBg);
+    document.documentElement.style
+    .setProperty('--outline', "#" + ColourOutline);
+    document.documentElement.style
+    .setProperty('--fill', "#" + ColourFill);
+    </script>
+    <script src="initialise.js"></script>
+    <script src="multipliers.js"></script>
+    <script src="dial.js"></script>
+    <script src="mouse.js"></script>
+    <script src="safe.js"></script>
+    <script src="main.js"></script>
+</html>

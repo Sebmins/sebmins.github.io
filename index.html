@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--
+<button target="_blank" class='button-g google-blue' onclick="window.location.href = 'InTouch/Safe.html';">Safe Game</button>
+    -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +24,11 @@
     <section class="about" id="about">
         <div class="section-heading">
             <h1>About Myself</h1>
+                    <!--
                 <div class="cv-section">
-                <a target="_blank" href="CV%20-%20Seb%20Waring.pdf" class="cta">See my 2 page CV</a> <span> || </span>
+                <a target="_blank" href="CV%20-%20Seb%20Waring.pdf" class="cta">See my 2 page CV</a> <span> || </span>  
                 <a target="_blank" href="CV%201%20Page%20%20-%20Seb%20Waring.pdf" class="cta">See my 1 page CV</a>
-                </div>
+                </div>-->
         </div>
         <div class="container">
             <div class="about-img">
@@ -34,23 +38,61 @@
             </div>
             
             <div class="about-details">
-                <p>I graduated Brunel University achieving a First Class Honours in Computer Science BSc (Hons) with Professional Practice. I developed this website to be able to display all my work inside and outside of University.</p>
+                <p>I graduated Brunel University achieving a First Class Honours in Computer Science BSc (Hons) with Professional Practice. Since leaving in 2019 I wanted to expand my knowledge in other programming languages, my first project was this website which I coded in HTML5 and CSS with a tiny bit of JavaScript which changes the colour scheme on a refresh (press F5)! I developed this website so I can display my previous University projects and all my projects thereafter.</p>
             </div>
         </div>
     </section>
     
+    
     <section class="portfolio-demo" id="portfolio-demo">
         <div class="container">
             <div class="section-heading">
-                <h1>Portfolio</h1>
+                <h1>University Projects</h1>
+                <h6>View two of my Java projects</h6>
+            </div>
+            
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-right" style="maxheight:30px, text-align:justify;">
+                    <h6>Software Development | NOV 2018 - APR 2019</h6>
+                    <h1>Procedural Maze Generation</h1>
+                    <p>My final year project was to create a virtual perfect maze that an AI robot will solve. The video to the right shows the robot solving a 5 by 5 maze. For this module I won the Made in Brunel 2019 Software Architecture Prize and achieving an A+ for the dissertation.</p>
+                    <a target="_blank" class="github-button" href="https://github.com/Sebmins/MazeGenerator" data-size="large" aria-label="Watch Sebmins/MazeGenerator on GitHub">View Repository</a>
+                </div>
+                <div class="portfolio-img-w has-border">
+                    <video width="200" height="360" controls muted>
+                      <source src="Pictures/FinchDemo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+            <div class="portfolio-item">
+                <div class="portfolio-img-h has-margin-right">
+                    <img src="Pictures/BrunelSports.gif" alt="">
+                </div>
+                <div class="portfolio-description">
+                    <h6>App Development | DEC 2016 - MAR 2017</h6>
+                    <h1>Calendar Android App</h1>
+                    <p>A 6-month group project to design and develop a data-driven app that is not currently available on the Google Play Store. Being an active member of a multitude of Brunel Sports clubs I found it hard to know what time training was on, this app aimed to fix this issue. The app was coded in Java where I developed the calendar widget for the app.</p>
+                    <a target="_blank" class="github-button" href="https://github.com/Sebmins/BrunelSports" data-size="large" aria-label="Watch Sebmins/BrunelSports on GitHub">View Repository</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+            
+    
+    <section class="portfolio-demo" id="portfolio-demo">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Minigames</h1>
                 <h6>Play some of my individual projects</h6>
             </div>
             
             <div class="portfolio-item">
                 <div class="portfolio-description has-margin-right" style="maxheight:30px">
-                    <h6>JavaScript Development</h6>
+                    <h6>JavaScript Development | JAN 2020</h6>
                     <h1>Playable Advert</h1>
-                    <p>I developed a playable advert in HTML5 and JavaScript for NeonPlay, based off their hyper casual game Buca. The advert is meant for mobile however it is available to play on my website.</p>
+                    <p>Developed a playable advert in HTML5 and JavaScript for NeonPlay, based off their hyper casual game Buca. This was my first project using the HTML5 Canvas, employing an object-oriented style of programming allowed me to easily create new levels with little extra code.</p>
                     <button target="_blank" class='button-g google-blue' onclick="window.location.href = 'Buca/Buca.html';">Play The Demo</button>
                 </div>
                 <div class="portfolio-img-app">
@@ -63,15 +105,29 @@
                       <img src="Pictures/MazeLogo.png" alt="" width="350">
                 </div> 
                 <div class="portfolio-description">
-                    <h6>Unity Development</h6>
+                    <h6>Unity Development | JAN 2020</h6>
                     <h1>Tile Runner</h1>
-                    <p>I developed an infinite runner in Unity with C#. Having experience developing mazes in Java I wanted to implement a game based off random generation given adjustable constraints.</p>
+                    <p>Having experience writing a dissertation on mazes and their algorithms, this knowledge was put to use by creating a puzzle game in Unity/C# that incorporated aspects from infinite runners and memory games. This project helped me understand the similarities and differences between Java and C# and how quickly it can be learnt.</p>
                     <button target="_blank" class='button-g google-blue' onclick="window.location.href = 'TileRun/TileRun.html';">Play The Demo</button>
                 </div>
             </div>
+            
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-right">
+                    <h6>MonoGame Development | DEC 2018 </h6>
+                    <h1>Space Shoot 'em Up</h1>
+                    <p>A Digital Media and Game coursework project, to design a game in the Shoot 'Em Up genre, using MonoGame which is a C# scripting language.</p>
+                    <a target="_blank" class="github-button" href="https://github.com/Sebmins/SpaceBoy-Shootem" data-size="large" aria-label="Watch Sebmins/SpaceBoy-Shootem on GitHub">View Repository</a>
+                </div>
+                
+                <div class="portfolio-img-h">
+                      <img src="Pictures/Level3.gif" alt="" width="350">
+                </div> 
+            </div>
+            
         </div>
     </section>
-                    
+     <!--               
     <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="section-heading">
@@ -80,72 +136,20 @@
             </div>
             
             <div class="portfolio-item">
-                <div class="portfolio-description has-margin-right" style="maxheight:30px">
-                    <h6>Software Development</h6>
-                    <h1>Procedural Maze Generation</h1>
-                    <p>My final year project, that won the Made in Brunel 2019 Software Architecture Prize, achieving an A+ in the dissertation.</p>
-                    <a target="_blank" class="github-button" href="https://github.com/Sebmins/MazeGenerator" data-size="large" aria-label="Watch Sebmins/MazeGenerator on GitHub">View Repository</a>
-                </div>
-                <div class="portfolio-img-w has-border">
-                    <video width="200" height="360" controls muted>
-                      <source src="Pictures/FinchDemo.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-            
-            <div class="portfolio-item">
-                <div class="portfolio-img-h has-margin-right">
-                      <img src="Pictures/Level3.gif" alt="" width="350">
-                </div> 
-                <div class="portfolio-description">
-                    <h6>Game Development</h6>
-                    <h1>Space Shoot 'em Up</h1>
-                    <p>A 1-month coursework project, to design a game in the Shoot 'Em Up genre, using MonoGame which is a C# scripting langauge.</p>
-                    <a target="_blank" class="github-button" href="https://github.com/Sebmins/SpaceBoy-Shootem" data-size="large" aria-label="Watch Sebmins/SpaceBoy-Shootem on GitHub">View Repository</a>
-                </div>
-            </div>
-            
-            <div class="portfolio-item">
-                
-                <div class="portfolio-description has-margin-right">
-                    <h6>Game Design</h6>
-                    <h1>Maze Runner Unity Game</h1>
-                    <p>I wanted to combine my knowledge of maze algoirthms and C# to create a Unity game. This is currently being worked on, progress will be updated on GitHub.</p>
-                    <a target="_blank" class="github-button" href="https://github.com/Sebmins/MazeRunner" data-size="large" aria-label="Watch Sebmins/MazeRunner on GitHub">View Progress</a>
-                </div>
-                <div class="portfolio-img-h">
-                      <img src="Pictures/MazeGen.gif" alt="" width="250">
-                </div>
-            </div>
-            
-            <div class="portfolio-item">
-                <div class="portfolio-img-h has-margin-right">
-                    <img src="Pictures/BrunelSports.gif" alt="">
+                <div class="portfolio-img-w has-margin-right">
+                    <img src="Pictures/WebsiteScreenshot.png" alt="">
                 </div>
                 <div class="portfolio-description">
-                    <h6>App Development</h6>
-                    <h1>Calendar Android App</h1>
-                    <p>A 6-month group project to design and develop a data-driven app that is not currently available on the Google Play Store.</p>
-                    <a target="_blank" class="github-button" href="https://github.com/Sebmins/BrunelSports" data-size="large" aria-label="Watch Sebmins/BrunelSports on GitHub">View Repository</a>
-                </div>
-            </div>
-            
-            
-            <div class="portfolio-item">
-                <div class="portfolio-description has-margin-right">
                     <h6>Web Development</h6>
                     <h1>Portfolio Website</h1>
                     <p>My portfolio website which you are currently on. Coded in CSS and HTML, all source files are uploaded to GitHub </p>
                     <a target="_blank" class="github-button" href="https://github.com/Sebmins/sebmins.github.io" data-size="large" aria-label="Watch Sebmins/sebmins.github.io on GitHub">View Repository</a>
                 </div>
-                <div class="portfolio-img-w">
-                    <img src="Pictures/WebsiteScreenshot.png" alt="">
-                </div>
             </div>
             
         </div>
     </section>
-    
+    -->
     <section class="services" id="services">
         <div class="container">
             <div class="section-heading">
